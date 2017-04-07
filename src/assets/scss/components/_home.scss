@@ -1,5 +1,107 @@
 body {
-  background: url('/assets/img/dw.v1.jpg') no-repeat center center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-} 
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+	background-color: $blue;
+}
+
+.dw-title {
+		font-size: 3.5rem;
+		margin: 2rem 0rem;
+		padding: 1rem;
+		position: relative;
+
+		@include breakpoint (medium) {
+			font-size: 6rem;
+		}
+	
+	}
+
+	.dw-sub-header {
+  	font-size: 1.75rem;
+  	margin: 2rem 0rem;
+		position: relative;
+		padding: 1rem;
+
+		@include breakpoint (medium) {
+			font-size: 2rem;
+		}
+
+	}
+
+	.dw-text {
+  	font-size: 1.10rem;
+  	margin: 2rem 0rem;
+		position: relative;
+		padding: 1.5rem 2rem;
+
+	}
+
+	.signup {
+		margin: 2rem 0rem;
+		padding: 2rem;
+		position: relative;
+		
+	}
+
+
+
+
+
+
+.version-1 {
+	background: url('/assets/img/dw-v1.jpg');
+	color: $white;
+
+	.dw-title {
+		background: $green;
+  	background: rgba($green, 0.95);
+	}
+
+	.dw-sub-header {
+		background: $blue;
+  	background: rgba($blue, 0.95);
+	}
+
+	.dw-text {
+		background: $maroon;
+  	background: rgba($maroon, 0.95);
+	}
+
+	.signup {
+		background: $gray;
+  	background: rgba($gray, 0.95);
+	}
+
+ }
+
+
+
+.version-2 {
+	background: url('/assets/img/dw-v2.jpg');
+
+	.dw-title {
+		background: $light-blue;
+		background: rgba($light-blue, 0.85);
+		color: $white;
+
+	}
+
+	.dw-sub-header {
+		background: $white;
+		background: rgba($white, 0.75);
+	}
+
+	.dw-text {
+		background: $light-blue;
+		background: rgba($light-blue, 0.85);
+		color: $white;
+
+	}
+
+	.signup {
+		background: $purple;
+		background: rgba($purple, 0.85);
+	}
+}
