@@ -45,6 +45,64 @@ body {
 }
 
 
+.dw-confirm {
+	background: url('/assets/img/dw-v3.jpg');
+
+		@include breakpoint (large) {
+		background: url('/assets/img/dw-medium-v3.jpg');
+	}
+
+	@include breakpoint (thunder) {
+		background: url('/assets/img/dw-large-v3.jpg');
+	}
+
+	.button {
+		background-color: $light-blue;
+		font-size: bold;
+	}
+
+	.dw-title {
+		background: $light-blue;
+		background: rgba($light-blue, 0.85);
+		color: $white;
+
+	}
+
+	.dw-sub-header {
+		background: $white;
+		background: rgba($white, 0.75);
+	}
+
+	.dw-text {
+		background: $light-blue;
+		background: rgba($light-blue, 0.85);
+		color: $white;
+
+	}
+
+	.signup {
+		background: $purple;
+		background: rgba($purple, 0.85);
+	}
+
+  .social-media {
+  	a {
+  		color: $white;
+  	}
+
+  	ul {
+  		margin: 0px;
+  	}
+
+  	li {
+  		display: inline-block;
+  		list-style-type: none;
+  		padding: 1rem;
+  	}
+  }
+
+
+}
 
 
 
