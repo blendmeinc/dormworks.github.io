@@ -6,44 +6,43 @@ body {
 	background-color: $blue;
 }
 
+
 .dw-title {
-		font-size: 3.5rem;
-		margin: 2rem 0rem;
-		padding: 1rem;
-		position: relative;
+	font-size: 3.5rem;
+	margin: 2rem 0rem;
+	padding: 1rem;
+	position: relative;
 
-		@include breakpoint (medium) {
-			font-size: 6rem;
-		}
-	
+	@include breakpoint (medium) {
+		font-size: 6rem;
+	}
+}
+
+.dw-sub-header {
+	font-size: 1.75rem;
+	margin: 2rem 0rem;
+	position: relative;
+	padding: 2rem;
+
+	@include breakpoint (medium) {
+		font-size: 2rem;
 	}
 
-	.dw-sub-header {
-  	font-size: 1.75rem;
-  	margin: 2rem 0rem;
-		position: relative;
-		padding: 1rem;
+}
 
-		@include breakpoint (medium) {
-			font-size: 2rem;
-		}
+.dw-text {
+	font-size: 1.5rem;
+	margin: 2rem 0rem;
+	padding: 2rem !important;
+	position: relative;
+	padding: 1.5rem 2rem;
+}
 
-	}
-
-	.dw-text {
-  	font-size: 1.10rem;
-  	margin: 2rem 0rem;
-		position: relative;
-		padding: 1.5rem 2rem;
-
-	}
-
-	.signup {
-		margin: 2rem 0rem;
-		padding: 2rem;
-		position: relative;
-		
-	}
+.signup {
+	margin: 2rem 0rem !important;
+	padding: 2rem !important;
+	position: relative !important;
+}
 
 
 
@@ -51,8 +50,16 @@ body {
 
 
 .version-1 {
-	background: url('/assets/img/dw-v1.jpg');
+	background: url('/assets/img/dw-v1.svg');
 	color: $white;
+
+	.button {
+		background-color: $blue;
+		font-size: bold;
+		&:hover {
+			background-color: scale-color($blue, $lightness: -15%);
+		}
+	}
 
 	.dw-title {
 		background: $green;
@@ -80,6 +87,19 @@ body {
 
 .version-2 {
 	background: url('/assets/img/dw-v2.jpg');
+
+		@include breakpoint (large) {
+		background: url('/assets/img/dw-medium-v2.jpg');
+	}
+
+	@include breakpoint (thunder) {
+		background: url('/assets/img/dw-large-v2.jpg');
+	}
+
+	.button {
+		background-color: $light-blue;
+		font-size: bold;
+	}
 
 	.dw-title {
 		background: $light-blue;
