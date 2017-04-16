@@ -38,6 +38,29 @@ body {
 	padding: 1.5rem 2rem;
 }
 
+.l-dw-value {
+	font-size: 1.2rem;
+  	padding: 2rem;
+	margin-bottom: 10rem;
+}
+
+.dw-value {
+
+	text-align: center;
+	p {
+		text-align: left;
+	}
+
+	i {
+		font-size: 4rem;
+	}
+
+	h1 {
+		margin-bottom: 2rem
+	}
+
+}
+
 .signup {
 	margin: 2rem 0rem !important;
 	padding: 2rem !important;
@@ -121,22 +144,27 @@ body {
 
 	.dw-title {
 		background: $green;
-  	background: rgba($green, 0.95);
+  		background: rgba($green, 0.95);
 	}
 
 	.dw-sub-header {
 		background: $blue;
-  	background: rgba($blue, 0.95);
+		background: rgba($blue, 0.95);
 	}
 
 	.dw-text {
 		background: $maroon;
-  	background: rgba($maroon, 0.95);
+		background: rgba($maroon, 0.95);
+	}
+
+	.l-dw-value {
+		background: $green;
+  		background: rgba($green, 0.95);
 	}
 
 	.signup {
 		background: $gray;
-  	background: rgba($gray, 0.95);
+  		background: rgba($gray, 0.95);
 	}
 
  }
@@ -176,6 +204,12 @@ body {
 		background: rgba($light-blue, 0.85);
 		color: $white;
 
+	}
+
+	.l-dw-value {
+		background: $light-blue;
+  		background: rgba($light-blue, 0.95);
+  		color: $white;
 	}
 
 	.signup {
